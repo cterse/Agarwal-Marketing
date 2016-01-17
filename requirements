@@ -1,0 +1,17 @@
+Sign Up Form:
+
+1.	Name (anything)
+2.	Email address (validate)
+3.	Company question (only qt in the sign up form, once the user successfully logs in, ask his company info then.)
+4.	Passwords (validate)
+
+php part:	First check whether the email id already exists in the db. If it does, show email already exists with 
+			all other filled info in place.
+			If everything is proper, add the info to the user database and create user sessions vaariables containing :
+			1.	u_id	2.	u_name		3.	u_password
+			And direct the registered user to products page as a successfully logged in user.
+
+Login Modal:
+
+1.	Validatee the form.
+2.	Verify Login
