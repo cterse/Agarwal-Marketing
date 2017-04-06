@@ -1,7 +1,5 @@
 <?php
 
-	
-
 	if(isset($_POST['search'])){
 		$search = $_POST['search'];
 		header("location: http://localhost/agar/boot/search.php?search=$search");
@@ -47,23 +45,23 @@
 			        	<span class="icon-bar"></span> 
 			    	</button>
 
-					<a class="navbar-brand" href="http://localhost/agar/boot/home_2.php"><img src="http://localhost/agar/boot/res/am.png" height="45" width="55" style="margin-top:-0.68em;"></a>
+					<a class="navbar-brand" href="http://localhost/Agarwal-Marketing/home_2.php"><img src="http://localhost/Agarwal-Marketing/res/am.png" height="45" width="55" style="margin-top:-0.68em;"></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="myNavbar">
 				<!--Links in the navbar--> 
 				<ul class="nav navbar-nav">
-					<li id="one"><a href="http://localhost/agar/boot/home_2.php">Home</a></li>
-					<li id="two"><a href="http://localhost/agar/boot/products_1.php">Products</a></li>
-					<li id="three"><a href="http://localhost/agar/boot/about.php">About Us</a></li>
-					<li id="four"><a href="http://localhost/agar/boot/contact_us1.php">Contact Us</a></li>
+					<li id="one"><a href="http://localhost/Agarwal-Marketing/home_2.php">Home</a></li>
+					<li id="two"><a href="http://localhost/Agarwal-Marketing/HMIproducts.php">Products</a></li>
+					<li id="three"><a href="http://localhost/Agarwal-Marketing/about.php">About Us</a></li>
+					<li id="four"><a href="http://localhost/Agarwal-Marketing/contact_us1.php">Contact Us</a></li>
 				</ul>
 
 				<!--The signin Button-->
 					<button id="signin_button" style="margin-right:2em;" type="button" class="btn btn-success navbar-btn navbar-right nav-signin" data-toggle="modal" data-target="#loginModal">
 						Sign In
 					</button>
-				}			
+					
 				<!--The logout Button-->
 				<button id="logout_button" style="margin-right:2em;" type="button" class="btn btn-danger navbar-btn navbar-right">
 					Log Out
@@ -82,7 +80,7 @@
 				</ul>
 				
 				<!--The Search Form-->
-				<form class="navbar-form navbar-right" role="search" action="http://localhost/agar/boot/navbar_2.php" method="post">
+				<form class="navbar-form navbar-right" role="search" action="http://localhost/Agarwal-Marketing/navbar_2.php" method="post">
   					<div class="form-group">
     					<input type="text" size="50" name="search" id="search" class="form-control" placeholder="Search">
  				 	</div>

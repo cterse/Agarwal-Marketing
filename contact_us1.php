@@ -49,15 +49,8 @@
 		<link rel="stylesheet" type="text/css" href="font-awesome-4.4.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="http://localhost/agar/boot/favicon.ico"/>
 
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Import the Bootstrap css libs-->
-		<!--Import the Bootstrap JQuery and Javascript libs in that order-->
-		<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		-->
-		<!--style section for google map-->
+       
 		<style>
 			body { 
 		  		background-color:#CCC 
@@ -191,40 +184,23 @@
 				
 			<!--section for google maps-->
 			<div class="container" style="margin-top:10px">
-				
-				<div id="map-container">
-							
-					<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-					
-					<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-					<script>	
-						 
-						function init_map() {
-						var var_location = new google.maps.LatLng(18.995010, 72.823071);
-						 
-						var var_mapoptions = {
-							center: var_location,
-							zoom: 14
-						};
-						 
-						var var_marker = new google.maps.Marker({
-							position: var_location,
-							map: var_map,
-							title:"Agarwal Marketing"});
-						 
-						var var_map = new google.maps.Map(document.getElementById("map-container"),
-							var_mapoptions);
-						 
-							var_marker.setMap(var_map);	
-						 
-							}
-						 
-						google.maps.event.addDomListener(window, 'load', init_map);
-						 
-					</script>
-								
-				</div><!-- /map-outer -->
-				
+				<div id="map-container"></div>
+					<script>
+				      function initMap() {
+				        var uluru = {lat: 18.994049, lng: 72.8229014};
+				        var map = new google.maps.Map(document.getElementById('map-container'), {
+				          zoom: 15,
+				          center: uluru
+				        });
+				        var marker = new google.maps.Marker({
+				          position: uluru,
+				          map: map
+				        });
+				      }
+				    </script>
+				    <script async defer
+				    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiU8ICFBEngtPVNtRew7m_G1DaJoNB7FM&callback=initMap">
+				    </script>
 			</div>
 			<!--section for map ends-->
 			<br><br>

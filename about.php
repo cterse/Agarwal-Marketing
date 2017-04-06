@@ -75,6 +75,14 @@
 		<br>
 
 		<font face="verdana" size=5 color=red>
+			HOW OUR PRODUCTS ARE MADE :
+		</font>
+		<div class="embed-responsive embed-responsive-16by9">
+		<iframe width="200" height="280" src="https://www.youtube.com/embed/m8W2g-YvjPw" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<br><br>
+
+		<font face="verdana" size=5 color=red>
 			PRODUCT PORTFOLIO :
 		</font>
 		

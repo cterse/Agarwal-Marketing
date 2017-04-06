@@ -1,6 +1,6 @@
 <?php
 
-require 'connect.php';
+require 'connectToSQL.php';
 
 //Create Database
 $sql = "CREATE DATABASE main_db";
